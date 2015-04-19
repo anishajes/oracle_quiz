@@ -1,14 +1,14 @@
-def plus(second)
-  return lambda{ |first| first + second }
+def plus(right)
+  return lambda{ |left| left + right }
 end
-def minus(second)
-  return lambda{ |first| first - second }
+def minus(right)
+  return lambda{ |left| left - right }
 end
-def times(second)
-  return lambda{ |first| first * second }
+def times(right)
+  return lambda{ |left| left * right }
 end
-def divided_by(second)
-  return lambda{ |first| first / second }
+def divided_by(right)
+  return lambda{ |left| left / right }
 end
 
 def zero(func = nil)
